@@ -154,14 +154,13 @@ questions = [
     },
 ]
 
-# Initialize a variable to keep track of the score
+# Initialize a variable score to keep track of the score and gives the total score scored by us at the end
 score = 0
 
 # Shuffle the questions to make them random
 random.shuffle(questions)
 
 # Function to display a question and get the user's answer
-
 
 def ask_question(question_obj):
     print(question_obj["question"])
@@ -178,7 +177,7 @@ def ask_question(question_obj):
         return ask_question(question_obj)
 
 
-# Set a timer for the entire quiz (e.g., 60 seconds)
+# Set a timer (300 seconds i.e, 5 minutes)
 quiz_time = 300
 start_time = time.time()
 end_time = start_time + quiz_time
